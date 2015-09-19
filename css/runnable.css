@@ -1,0 +1,44 @@
+h1 {
+  font-family: Helvetica;
+  font-weight: 100;
+}
+body {
+  color:#333;
+	text-align:center;
+}
+
+@media only screen and (min-width :768px) and (max-width :990px){
+/* #carousel{ width:90%; }
+.btn-bar{ width:65%;} */
+header .navigation li{ font-size:12px; margin-right:18px;}
+.header-tel {
+ color: #090909;
+  line-height: normal;
+  text-align: right; margin:-67px 0px 0px;; 
+}
+}
+@media only screen and (max-width :640px){
+.home .phone{ display:none;}
+header .navigation{ display:none;}
+.info.ten.columns.animated.fadeInRight {
+    float: left !important;
+   top:0px;
+    padding: 0 !important; right:0 !important;
+}
+#wrapper{ float:left; display:block; width:90%;  margin-left:5%;}
+#wrapper h1{ text-align:center !important; float:left; display:block; width:100%; margin-top:-60px;}
+form#testform {
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 #444;
+    overflow: hidden;
+   width:100%;
+    position: relative;display:block;
+}
+#carousel{ width:95% !important; }
+.btn-bar{ width:100% !important;}
+.quote-phrase{ font-size:17px; }
+#about>h1{ font-size:20px;}
+footer *{ width:100%; text-align:center;}
+.foot-title{ text-align:center; margin-top:20px;}
+} 

@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Basic
+  ================================================== -->
+    
+<!-- Load jQuery JS -->
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+</script>
+<script src="src/linkes_drilldown.js" type="text/javascript"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/simpleform.min.js"></script>
+
+	
+<script type="text/javascript">
+			$(function(){
+				$('.drillDownMenu').linkesDrillDown();
+				
+				/*this is just to present something when clicking a dummy link*/
+				$('a[href="#a"]').attr('href','javascript:void(0);').click(function(){alert('Click')});
+			});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62562125-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script language="javascript" src="js/chainedselects.js"></script>
+<script language="javascript" src="js/exampleconfig.js"></script>
+<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+<script src="js/magnific-popup.0.9.9.js" type="text/javascript"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/rome.js" type="text/javascript"></script>
+
+<script src="js/jquery.chained.js"></script>
+
+<title>DoorHelp - Help At Door</title>
+<meta name="description" content="DoorHelp is the fastest and smartest way for online services in Delhi">
+<meta name="keywords" content="Help At Door :DoorHelp">
+<meta name="author" content="DoorHelp">
+	
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="./DooRHelp/rome.css">
+	<link rel="stylesheet" href="./DooRHelp/devices.css">
+	<link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/simpleform.css" />
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link rel="stylesheet" href="css/jquerysctipttop.css">
+    <link rel="stylesheet" type="text/css" href="css/ss.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/runnable.css" /><!-- responsive.css-->
+	</head>
+	
+
+
+
+	
+
+<body style="overflow: auto;">
+	<!-- wrapper -->
+	<div class="wrapper">   <!--for the features to get down easily---->
+
+		<!-- header -->
+		<header style="height: 70px; background-color: rgb(255,255,255);">
+
+			<!-- container -->
+			<div class="container clearfix">
+
+				<div class="one-third column">
+
+					<!-- logo -->
+					<div class="logo" style="top: 15px;"></div>
+					<div class="menu" style="top: 25px;">Menu</div>
+					<!-- logo -->
+
+				</div>
+
+				<div class="two-thirds column">
+
+					<!-- navigation -->
+					<div class="navigation">
+						<ul>
+							<li data-url="home" data-type="in" class="active" style="">Home</li>
+							<li data-url="bookonline" data-type="in" class="" style="">Book Online</li>
+							
+							<li data-url="features" data-type="in" class="" style="">Why Us</li>
+							<li data-url="faq" data-type="in" class="" style="">FAQ</li>
+							<li data-url="about" data-type="in" class="" style="">Testimonials</li>
+							<li data-url="contact" data-type="in" class="" style="">Contact</li>
+						</ul>
+						<div class="header-tel">
+<span style="font-size:15px;color:#45a593">Call Us To Book</span>
+<i class="fa fa-phone"></i></span>+91 99 99453599
+</div>
+					</div>
+					<!-- navigation -->
+
+				</div>
+
+			</div>
+
+		</header>
+		<!-- header -->
+
+
+		<!-- section -->
+		<section class="home fullscreen" id="home" style="height: 770px;">
+
+            <div class="background fullscreen" style="height: 770px;">
+				<div class="overlay">
+
+					<!-- container -->
+					<div class="container clearfix fullscreen" style="height: 770px;">
+						
+
+						<div class="phone eight columns animated fadeInLeft"> </div>
+
+						<div class="info ten columns animated fadeInRight" style="bottom: 217px; right: 0px;">
+
+							
+							<div class="logo">DooRHelp</div>
+
+							<div class="welcome" style="margin-left: 5px">Help At Door: DooRHelp </div>
+							<div class="wrapper2">
+		 		
+		
+
+							
+							<a><img src="./DooRHelp/android.png" class="fix-small-screen"></a>
+							
+
+						</div>
+
+
+					</div>
+					<!-- container -->
+
+					<div class="more"></div>
+				
+				</div>
+
+			</div>
+</div>
+		</section>
+		<!-- section -->
+
+
+
+<section class="bookonline" id="bookonline">
+
+
+				<!-- container -->
+				
+
+					
+
+</div><!--for features tag else wont move down -->
+	<section id="wrapper" style="margin-top:150px;">
+		<h1>Book The Service</h1>
+   				<p class="submit-box" id="testform_error" style="background-color: #f8f8f8; padding: 15px; margin-top: -30px; margin-bottom: 15px !important; display: none;">
+							There was some error while registering your request. Please try again later.
+					</p>
+				<div class="submit-box" id="testthank_you" style="background-color: #f8f8f8; padding: 30px; font-size: 1.4em; font-weight: 700; display: none;">
+				    	Thanks for your booking. We'll take care from here :)
+			    </div>
+
+		<form class="testform" id="testform"><fieldset class="personal-data">
+					<select id="area"	 required>
+        <option value="">Select Your Area </option>
+        <option value="Sheikh Sarai Phase 1" data-icon="./img/AU.png">Sheikh Sarai Phase 1</option>
+        <option value="Malviya Nagar" data-icon="./img/CA.png">Malviya Nagar</option>
+        <option value="Shivalik" data-icon="./img/PL.png">Shivalik</option>
+        <option value="Khirki Extension" data-icon="./img/TH.png">Khirki Extension</option>
+        <option value="Chirag Delhi" data-icon="./img/UK.png">Chirag Delhi</option>
+      	  <option value="Panchsheel Park" data-icon="./img/UK.png">Panchsheel Park</option>
+	  <option value="Soami Nagar" data-icon="./img/UK.png">Soami Nagar</option>
+	  <option value="Savitri Nagar" data-icon="./img/UK.png">Savitri Nagar</option>
+<!--	  <option value="Ganesh Nagar" data-icon="./img/UK.png">Ganesh Nagar</option> -->
+<!--	  <option value="Virender Nagar" data-icon="./img/UK.png">Virender Nagar</option> -->
+	  </select>
+			</fieldset>
+			<fieldset class="personal-data">
+					<label for="name">Full Name: <span class="required">*</span></label>
+					<input type="text" id="name" name="name" placeholder="John Smith" />
+
+					<label for="email-address">Email: <span class="required">*</span></label>
+					<input type="email" name="email" id="email" placeholder="example@email.com" />
+
+					<label for="phone">Phone:</label>
+					<input type="tel" name="phone" id="phone" placeholder="000-000-000" />
+			</fieldset>
+<fieldset class="personal-data">
+					
+<select id="mark" name="mark" required>
+  <option value="">Select The Service</option>
+  <option value="electrician">Electrician</option>
+   <option value="plumber">Plumber</option>
+    <option value="appliancerepair">Appliance Repair</option>
+	 <option value="carpenter">Carpenter</option>
+</select>
+<select id="series" name="series" required>
+  <option value="">Select The SubService</option>
+  <option value="fan/exhaust" class="electrician">Fan/Exhaust</option>
+  <option value="tubelightbulb" class="electrician">Tube Light /Bulb</option>
+  <option value="fuserepair" class="electrician">Fuse Repair</option>
+  <option value="switchwire" class="electrician">Switch/Wire</option>
+  <option value="inverterproblem" class="electrician">Inverter Problem</option>
+  <option value="doorbell" class="electrician">DoorBell</option>
+  <option value="otherrepair" class="electrician">Other Repair</option>
+  
+  <option value="blockage" class="plumber">Blockage</option>
+  <option value="drainage" class="plumber">Drainage</option>
+  <option value="bathroom/kitchen fittings" class="plumber">Bathroom/Kitchen Fittings</option>
+  <option value="otherrepair" class="plumber">Other Repair</option>
+ 
+ <option value="refrigerator" class="appliancerepair">Refrigerator</option>
+  <option value="windowac" class="appliancerepair">Windows AC</option>
+  <option value="splitac" class="appliancerepair">Split AC</option>
+ 
+ <option value="semiautomaticwashingmachine" class="appliancerepair">Semi Automatic Washing Machine</option>
+  <option value="microwave" class="appliancerepair">Microwave</option>
+  <option value="geyser" class="appliancerepair">Geyser</option> 
+ 
+ <option value="mixergrindermotor" class="appliancerepair">Mixer/Grinder/motor</option>
+  <option value="tv repair" class="appliancerepair">TV Repair</option>
+  <option value="pcrepair" class="appliancerepair">PC Repair</option>
+  <option value="otherrepair" class="appliancerepair">Other Repair</option>
+  
+<option value="doorwindowrepair" class="carpenter">Door/Window Repair</option>
+<option value="drillingandinstallation" class="carpenter">Drilling and Installation</option>
+<option value="furniturerepair" class="carpenter">Furniture Repair</option>
+<option value="Otherworks" class="carpenter">Other Works</option>
+
+  </select>
+
+			</fieldset>
+			<fieldset class="address-data-inputs">
+					<label for="house-id">Address With Building Number:</label>
+					<input type="text" id="house-id" name="house-id" placeholder="Janak Puri 318 B" />
+
+                    <label for="street">Postal Code:<span class="required">*</span></label>
+					<input type="text" id="street" name="street" placeholder="93401" />
+					
+					
+
+					<label for="county" required>Pick a Date: </label>
+    <p><input type="text" id="datepicker" /></p>
+					
+<select id="time" " required >
+        <option value="">Select Your Timing </option>
+        <option value="Any" data-icon="./img/AU.png">Any Time</option>
+        <option value="10-2" data-icon="./img/CA.png">10 AM -2 PM</option>
+        <option value="2-6" data-icon="./img/PL.png">2PM-6PM</option>
+        <option value="6-10" data-icon="./img/PL.png">6PM-10PM</option>
+          
+	  </select>
+					
+			</fieldset>
+
+			<fieldset class="message-details">
+					<label for="comments">Would you like to describe your task more:</label>
+					<textarea name="comments" id="comments"></textarea>
+        	</fieldset>
+        	<div class="clear"></div>
+		</form>
+
+		
+
+</body>
+
+
+
+		</section>
+
+
+		
+
+		<section class="features" id="features">
+
+			<div class="main offset">
+
+				<!-- container -->
+				<div class="container clearfix">
+
+					<div class="sixteen columns">
+
+						<div class="title">Why Us</div>
+						<div class="devider"></div>
+
+					</div>
+
+				</div>
+				<!-- container -->
+
+				<!-- container -->
+				<div class="container">
+					
+					<div class="feature one-third column animated fadeInDown" style="opacity: 1;">
+
+						<div><img src="./DooRHelp/interface.png"></div><br>
+						<div class="title">Easy Booking</div>
+						<p class="text">Now it takes few clicks or tap to get a service.</p>
+
+					</div>
+
+					<div class="feature one-third column animated fadeInDown" style="opacity: 1;">
+
+						<div><img src="./DooRHelp/location.png"></div><br>
+						<div class="title">Right On Time</div>
+						<p class="text">We will be at your Door in the requested time frame.</p>
+
+					</div>
+
+					<div class="feature one-third column animated fadeInDown" style="opacity: 1;">
+
+<div><img src="./DooRHelp/support.png"></div><br>
+						<div class="title">Customer Support</div>
+						<p class="text">From confirming and intimating your services to feedback after the completion of services - we do it all!</p>
+
+					</div>
+
+				</div>
+				
+				<!-- container -->
+
+			<div class="container">
+					
+					<div class="feature one-third column animated fadeInDown" style="opacity: 1;">
+
+
+
+					</div>
+
+				
+
+					<div class="feature one-third column animated fadeInDown" style="opacity: 1;">
+
+						
+
+					</div>
+
+				</div>
+				
+
+			</div>
+
+		</section>
+
+
+
+
+
+
+
+
+<section class="faq" id="faq">
+
+			<div class="more offset">
+
+				<!-- container -->
+				<div class="container clearfix">
+
+					<div class="sixteen columns">
+
+						<div class="title">FAQ</div>
+						<div class="subtitle">DooRHelp aims to enrich the experience of services at your Home</div>
+						<div class="devider"></div>
+
+					</div>
+
+				</div>
+				<!-- container -->
+
+				<!-- container -->
+				<div class="container">
+					
+					<div class="feature eight columns">
+
+						<div class="icon"><img src="./DooRHelp/phone.png"></div>
+						<div class="title">Why use DooRHelp instead of calling up the service provider?</div>
+						<p class="text">Remember calling again and again to the service provider and then worrying about either he is verified or not.</p>
+
+					</div>
+
+					<div class="feature eight columns">
+
+						<div class="icon"><img src="./DooRHelp/cart.png"></div>
+						<div class="title">Can book more than one service at a time?</div>
+						<p class="text">You can certainly book more than one services. </p>
+
+					</div>
+
+				</div>
+				<!-- container -->
+
+				<!-- container -->
+				<div class="container">
+
+					<div class="feature eight columns">
+
+						<div class="icon"><img src="./DooRHelp/charges.png"></div>
+						<div class="title">Does DooRHelp charge any extra fees? </div>
+						<p class="text">There are NO hidden fees, NO processing fees and NO transaction fees. You pay the exact amount, which is charged by the service provider for your service.</p>
+
+					</div>
+
+					<div class="feature eight columns">
+
+						<div class="icon"><img src="./DooRHelp/area.png"></div>
+						<div class="title">What if the DooRHelp doesnot show any area ?</div>
+						<p class="text">Just give us feedback we are currently in a selected area of Delhi.And working on getting all of Delhi under our ambit, so will see you soon! </p>	
+
+					</div>
+
+				</div>
+				<!-- container -->
+
+			</div>
+
+		</section>
+		
+
+	<section class="about" id="about">
+
+			
+
+
+<h1 style="margin:150px auto 30px auto; text-align:center; color:#00000;">What People Says About Us</h1>
+<div id="carousel">
+  <div class="btn-bar">
+    <div id="buttons"><a id="prev" href="#"><</a><a id="next" href="#">></a> </div>
+  </div>
+  <div id="slides">
+    <ul>
+      <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase"><span class="quote-marks">"</span> Superfast Service I got my laptop fixed in 2 hours from my first call to DoorHelp.Great work. All the Best.<span class="quote-marks">"</span> </p>
+        </div>
+        <div class="authorContainer">
+          <p class="quote-author">Deepak Arora // Local Business Owner</p>
+        </div>
+      </li>
+      <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase"><span class="quote-marks">"</span> "Electrician arrived within 30 minutes of selecting the required service. Definitely recommend to people who are tired of waiting for 
+
+servicemen!!! Nice job atlast someone care for your time. <span class="quote-marks">"</span> </p>
+        </div>
+        <div class="authorContainer">
+          <p class="quote-author">Aman Khannna</p>
+        </div>
+      </li>
+      <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase"><span class="quote-marks">"</span>Super impressed with DoorHelp! Got a carpenter to my house in less than an hour & he did the job promptly.<span class="quote-marks">"</span> </p>
+        </div>
+        <div class="authorContainer">
+          <p class="quote-author">Nitin Sharma</p>
+        </div>
+      </li>
+	  <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase"><span class="quote-marks">"</span>Super fast service! Really impressed with the quick service. They brought an electrician home in 20 minutes and helped me fix few 
+
+things that had been bothering me for weeks.<span class="quote-marks">"</span> </p>
+        </div>
+        <div class="authorContainer">
+          <p class="quote-author">Hrithik</p>
+        </div>
+      </li>
+	  <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase"><span class="quote-marks">"</span>We tried repairing our AC thrice, it wasn't cooling well. Saw the article on Doorhelp and tried them out. The experience was 
+
+phenomenal. A well informed AC wala reached within 30 minutes and we promptly got our AC fixed. 100% satisfied with doorhelp.<span class="quote-marks">"</span> </p>
+        </div>
+        <div class="authorContainer">
+          <p class="quote-author">Anjali</p>
+        </div>
+      </li>
+	  <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase"><span class="quote-marks">"</span>The technician who visited was knowledgeable and very polite. I am definitely coming back again.<span class="quote-marks">"</span> </p>
+        </div>
+        <div class="authorContainer">
+          <p class="quote-author">Deewansh</p>
+        </div>
+      </li>
+	   <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase"><span class="quote-marks">"</span>My AC went dead in the mid of summers. And I had no time to take it to any repair shop. I came to know about Doorhelp and contacted 
+
+them. Their process is so simple and convenient, I could not believe when my AC was fixed. Kudos to Doorhelp!<span class="quote-marks">"</span> </p>
+        </div>
+        <div class="authorContainer">
+          <p class="quote-author">Pulkit</p>
+        </div>
+      </li>
+	    <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase"><span class="quote-marks">"</span>
+Mr.Shiv {from Doorhelp} did way much better job in half the money than which i got done last year. Good Job Doorhelp in picking 
+
+right guys
+<span class="quote-marks">"</span> </p>
+        </div>
+        <div class="authorContainer">
+          <p class="quote-author">Anita</p>
+        </div>
+      </li>
+	    <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase"><span class="quote-marks">"</span>It was really easy to book a plumber with just a call.Great service.<span class="quote-marks">"</span> </p>
+        </div>
+        <div class="authorContainer">
+          <p class="quote-author">Shivani Ahuja</p>
+        </div>
+      </li>
+	    <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase"><span class="quote-marks">"</span>Had just shifted to Delhi and needed both an electrician and a plumber which was hard to get. DooRHelp delivered a great experience. <span class="quote-marks">"</span> </p>
+        </div>
+        <div class="authorContainer">
+          <p class="quote-author">Amish Batra</p>
+        </div>
+      </li>
+	  
+    </ul>
+  </div>
+</div>	
+		</section>
+		<section class="contact" id="contact">
+			<div class="offset">
+				<!-- container -->
+				<div class="container clearfix">
+					<div class="sixteen columns">
+						<div class="title">Say Hello!</div>
+						<div class="subtitle">Found a bug? Have some feedback? <br> Want to know more about us?Have some service suggestion<br>
+						We are eager to hear from you!</div>
+						<div class="devider"></div>
+					</div>
+				</div>
+				<!-- container -->
+				<!-- container -->
+				<div class="container clearfix">
+
+						<p class="submit-box" id="form_error" style="background-color: #f8f8f8; padding: 15px; margin-top: -30px; margin-bottom: 15px !important; display: none;">
+							There was some error with the feedback. Please try again later.
+						</p>
+						<p class="submit-box" id="box_error" style="background-color: #f8f8f8; padding: 15px; margin-top: -30px; margin-bottom: 15px !important; display: none;">
+							Some things are better to be filled correctly when saying Hello :)
+						</p>
+						<div id="thank_you" class="submit-box" style="background-color: #f8f8f8; padding: 30px; font-size: 1.4em; font-weight: 700; display: none;">
+				    	Thank you very much for your valuable feedback.
+				    </div>
+						<form id="feedback_form">
+
+							<p>
+					        	<input type="text" name="name" id="name2" placeholder="Name" required="">
+							</p>
+
+							<p>
+					        	<input type="email" name="email" id="email2" placeholder="Email" required="">
+							</p>
+
+							<p> 
+					        	<input type="text" name="subject" id="subject2" placeholder="Subject" required="">
+							</p>
+
+							<p>
+								<textarea name="message" id="message2" cols="45" rows="10" placeholder="Message" required=""></textarea>
+							</p>
+
+					        <p>
+					        	<button id="submit2">Submit</button>
+					        </p>
+
+					    </form>
+					
+					<!-- container -->
+
+				</div>
+				<!-- container -->
+
+			</div>
+
+
+		</section>
+		
+
+
+
+		<footer>
+	  <div class="container footer-col-div phone-hide">
+	  
+	  	<div class="one-third column">
+		<div class="foot-title"></div>
+	  		<ul>
+	  			<!--li><a href="/about">About</a></li-->
+	  			<li><a href="privacyandpolicy.html">Privacy</a></li>
+	  			<li><a href="termofuse.html">Terms</a></li>
+	  		</ul>
+	  		<div class="social-links" style="margin-left:-251px;">
+		  		<a href="https://twitter.com/doorhelpin" class="icon-link" target="_blank"><i class="fa fa-twitter"></i></a>
+		  		<a href="https://www.facebook.com/Doorhelp" class="icon-link" target="_blank"><i class="fa fa-facebook"></i></a>
+		  	</div>
+	  	</div>
+	  	<div class="one-third column">
+	  		<div class="foot-title">Services Offered</div>
+	  		<ul>
+	  			<li>Electrician</li>
+	  			<li>Plumber</li>
+	  			<li>AC Repair</li>
+	  			<li>Washing Machine Repair</li>
+	  			<li>Computer Repair</li>
+	  			<li>Refrigerator Repair</li>
+	  		</ul>
+	  	</div>
+	  	<div class="one-third column">
+	  		<div class="foot-title"></div>
+	  		<ul>
+	  			<li>TV Repair</li>
+	  			<li>Microwave Repair</li>
+	  			<li>Water Purifier Repair</li>
+	  			<li>Carpenter</li>
+	  			<li>Music System Repair</li>
+	  		</ul>
+	  	</div>
+	  </div>
+	  <div class="container phone-hide">
+	  	<div class="copyright two-third column" style="float:right;">
+	  		<i class="fa fa-copyright"></i> 2015 DooRHelp:    Help At Door
+	  	</div>
+	  </div>
+	  <div class="container phone-display" style="text-align:center;">
+	
+	  </div>
+	</footer>
+	
+
+	<!-- javascript -->
+	
+	
+
+<script src="js/prateek.js" type="text/javascript"></script>
+		
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script>
+$(document).ready(function () {
+    //rotation speed and timer
+    var speed = 5000;
+    
+    var run = setInterval(rotate, speed);
+    var slides = $('.slide');
+    var container = $('#slides ul');
+    var elm = container.find(':first-child').prop("tagName");
+    var item_width = container.width();
+    var previous = 'prev'; //id of previous button
+    var next = 'next'; //id of next button
+    slides.width(item_width); //set the slides to the correct pixel width
+    container.parent().width(item_width);
+    container.width(slides.length * item_width); //set the slides container to the correct total width
+    container.find(elm + ':first').before(container.find(elm + ':last'));
+    resetSlides();
+    
+    
+    //if user clicked on prev button
+    
+    $('#buttons a').click(function (e) {
+        //slide the item
+        
+        if (container.is(':animated')) {
+            return false;
+        }
+        if (e.target.id == previous) {
+            container.stop().animate({
+                'left': 0
+            }, 1500, function () {
+                container.find(elm + ':first').before(container.find(elm + ':last'));
+                resetSlides();
+            });
+        }
+        
+        if (e.target.id == next) {
+            container.stop().animate({
+                'left': item_width * -2
+            }, 1500, function () {
+                container.find(elm + ':last').after(container.find(elm + ':first'));
+                resetSlides();
+            });
+        }
+        
+        //cancel the link behavior            
+        return false;
+        
+    });
+    
+    //if mouse hover, pause the auto rotation, otherwise rotate it    
+    container.parent().mouseenter(function () {
+        clearInterval(run);
+    }).mouseleave(function () {
+        run = setInterval(rotate, speed);
+    });
+    
+    
+    function resetSlides() {
+        //and adjust the container so current is in the frame
+        container.css({
+            'left': -1 * item_width
+        });
+    }
+    
+});
+//a simple function to click next link
+//a timer will call this function, and the rotation will begin
+
+function rotate() {
+    $('#next').click();
+}
+</script>
+
+
+
+
+	
+	<script type="text/javascript">
+		$(".testform").simpleform({
+			speed : 500,
+			transition : 'fade',
+			progressBar : true,
+			showProgressText : true,
+			validate: true
+		});
+
+		$("#testform2").simpleform({
+			speed : 500,
+			transition : 'slide',
+			progressBar : true,
+			showProgressText : true,
+			validate: true
+		});
+
+		$("#testform3").simpleform({
+			speed : 500,
+			transition : 'none',
+			progressBar : true,
+			showProgressText : true,
+			validate: false
+		});
+
+		function validateForm(formID, Obj){
+
+			switch(formID){
+				case 'testform' :
+					Obj.validate({
+						rules: {
+							email: {
+								required: true,
+								email: true
+							},
+							
+							name: {
+								required: true
+							},
+							street: {
+								required: true
+							}
+						},
+						messages: {
+							email: {
+								required: "Please enter an email address",
+								email: "Not a valid email address"
+							},
+							
+							name: {
+							 	required: "Please enter your name"
+							},
+							street: {
+								required: "Please enter Postal Code"
+							}
+						}
+					});
+				return Obj.valid();
+				break;
+
+				case 'testform2' :
+					Obj.validate({
+						rules: {
+							email: {
+								required: true,
+								email: true
+							},
+							
+							name: {
+								required: true
+							},
+							spouse_email: {
+								required: true,
+								email: true
+							},
+							spouse_name: {
+								required: true
+							},
+							street: {
+								required: true
+							}
+						},
+						messages: {
+							email: {
+								required: "Please enter an email address",
+								email: "Not a valid email address"
+							},
+							
+							name: {
+							 	required: "Please enter your name"
+							},
+							spouse_email: {
+								required: "Please enter an email address",
+								email: "Not a valid email address"
+							},
+							spouse_name: {
+							 	required: "Please enter your spouses name"
+							},
+							street: {
+								required: "Please enter street name"
+							}
+						}
+					});
+				return Obj.valid();
+				break;
+			}
+		}
+		</script>
+
+		<script>
+$("#series").chained("#mark");
+</script>
+
+</body></html>
